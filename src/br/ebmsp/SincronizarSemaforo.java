@@ -23,7 +23,7 @@ public class SincronizarSemaforo {
         // Obtendo distancia entre os semafors
         distanciaSemaforo = sc.nextDouble();
 
-        System.out.println("Informe a velocidade em km/h (kilometro por segundo) permitida da via: ");
+        System.out.println("Informe a velocidade em km/h (quilômetro por hora) permitida da via: ");
 
         //Obtendo velocidade final permitida
         velocidadeFinal = sc.nextDouble();
