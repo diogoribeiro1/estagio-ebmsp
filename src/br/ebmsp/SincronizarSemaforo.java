@@ -20,12 +20,10 @@ public class SincronizarSemaforo {
 
         System.out.println("Informe a distancia em metros desde o semaforo anterior: ");
 
-        // Obtendo distancia entre os semafors
         distanciaSemaforo = sc.nextDouble();
 
-        System.out.println("Informe a velocidade em km/h (quilômetro por hora) permitida da via: ");
+        System.out.println("Informe a velocidade em km/h (quilômetros por hora) permitida da via: ");
 
-        //Obtendo velocidade final permitida
         velocidadeFinal = sc.nextDouble();
 
         //Transformado a velocidade de Km/h para m/s
@@ -33,14 +31,13 @@ public class SincronizarSemaforo {
 
         System.out.println("Informe a aceleração em m/s (metros por segundo) típica dos carros: ");
 
-        //obtendo acelaracao do carro
         aceleracaoCarro = sc.nextDouble();
 
         // Descobrindo o tempo que o carro demora pra chegar na velocidade Final
         tempoVelocidadeFinal = velocidadeFinal / aceleracaoCarro ;
 
         // Descobrindo  a distancia percorrida ate atingir a velocidade final
-        distanciaPercorridaVelocidadeFinal = (aceleracaoCarro	* (tempoVelocidadeFinal * tempoVelocidadeFinal)) / 2;
+        distanciaPercorridaVelocidadeFinal = (aceleracaoCarro * (tempoVelocidadeFinal * tempoVelocidadeFinal)) / 2;
 
         // Descobrindo a distancia que o carro percorre na velocidade constante
         distanciaNaVelocidadeConstante = distanciaSemaforo - distanciaPercorridaVelocidadeFinal;
